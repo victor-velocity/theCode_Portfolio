@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" id="theme" href="assets/css/dark.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css">
+    <link rel="stylesheet" href="assets/css/mediaquery.css">
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,es,fr,de,it', // Add desired languages
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+
+<body>
+    <div>
+        <nav>
+            <div class="name">
+                <span class="name1">Victor</span>
+                <span class="name2">Asama</span>
+            </div>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+                <i class="fa-solid fa-x" id="cancel"></i>
+                <li><a href="index.html" class="custom-underline" id="home">Home</a></li>
+                <li><a href="about.html" target="_self" id="about">About</a></li>
+                <li><a href="portfolio.html" id="portfolio">Portfolio</a></li>
+                <li><a href="#" id="contact">Contact</a></li>
+                <i class="fa-solid fa-moon" id="toggle" onclick="switchMode()"></i>
+                <div id="google_translate_element" class="google"></div>
+            </ul>
+        </nav>  
+    </div>
+    <main>
+        <div class="grid2">
+            <section class="info">
+                <div class="infos">
+                    <p class="info2">Reach out to our team of expert developers.</p>
+                    <p class="info1">theCode Headquaters</p>
+                    <div class="address">
+                        <span><i class="fa-solid fa-location-dot"></i></span>
+                        <p>22 Felicia Road, Olowora Road, Berger, Lagos State</p>
+                    </div>
+                    <div class="mail">
+                        <span><i class="fa-solid fa-envelope"></i></span>
+                        <p><a href="mailto:hyxenaetechnology@gmail.com(link unavailable)">hyxenaetechnology@gmail.com</a></p>
+                    </div>
+                    <a href="#follow" id="connect4"><div><button class="connect9"><i class="fa-solid fa-arrow-down arrow"></i><p>Follow Us</p></button></div></a>
+                </div>
+            </section>
+            <section>
+                <div class="contact_form">
+                    <div class="pre_form">
+                        <h1 class="contactname"><span class="cont">Contact </span><span class="contm">Me!</span></h1>
+                        <form>
+                            <div class="form1">
+                                <input type="text" class="fname" name="name" placeholder="Full Name" required>
+                                <input type="email" class="email" name="email" placeholder="Email Address" required>
+                            </div>
+                            <div class="form2">
+                                <input type="tel" class="number" name="number" placeholder="Mobile Number" required>
+                                <input type="text" class="subject" name="emailsubject" placeholder="Email Subject" required>
+                            </div>
+                            <textarea name="message" class="message" placeholder="Your message" required></textarea>
+                            <div class="btndiv">
+                                <input class="submit_btn3" type="submit" onclick="sent()">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="connect" id="follow">
+            <div class="connect2">
+                <h1>Follow our journey and stay updated with our latest projects and insights.</h1>
+            </div>
+            <div class="links2">
+                <a href="https://www.github.com/victor-velocity" target="_blank">
+                    <div>
+                        <span><i class="fa-brands fa-github github"></i></span>
+                        <p class="b-name">GitHub</p>
+                        <p class="b-content">Connect with our professionals and explore career opportunities.</p>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/asama-victor" target="_blank">
+                    <div>
+                        <span><i class="fa-brands fa-linkedin linkedin"></i></span>
+                        <p class="b-name">linkedIn</p>
+                        <p class="b-content">Connect with our professionals and explore career opportunities.</p>
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100016614308613" target="_blank">
+                    <div>
+                        <span><i class="fa-brands fa-facebook linkedin"></i></span>
+                        <p class="b-name">Facebook</p>
+                        <p class="b-content">Connect with our professionals and explore career opportunities.</p>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <div>
+                        <span><i class="fa-brands fa-instagram linkedin"></i></span>
+                        <p class="b-name">Instagram</p>
+                        <p class="b-content">Connect with our professionals and explore career opportunities.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="links">
+            <ul>
+                <li><a href="index.html" class="custom-underline" id="home">Home</a></li>
+                <li><a href="about.html" id="about">About</a></li>
+
+                <li><a href="portfolio.html" id="portfolio">Portfolio</a></li>
+                <li><a href="#" id="contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="brand">
+            <div>
+                <p>&copy  theCode 2023, Showcasing Innovation and Expertise</p>
+            </div>
+            <div class="brands">
+                <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram "></i></a></i>
+                <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-x "></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100016614308613" target="_blank"><i
+                        class="fa-brands fa-facebook" ></i></a>
+                <a href="https://www.linkedin.com/in/asama-victor" target="_blank"><i
+                        class="fa-brands fa-linkedin "></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/assets/js/main.js"></script>
+</body>
+
+</html>

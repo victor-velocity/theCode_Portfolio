@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" id="theme" href="assets/css/dark.css" />
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="assets/css/mediaquery.css" />
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,es,fr,de,it', // Add desired languages
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="name">
+                <span class="name1">Victor</span>
+                <span class="name2">Asama</span>
+            </div>
+            <input type="checkbox" id="check" />
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+                <i class="fa-solid fa-x" id="cancel"></i>
+                <li>
+                    <a href="index.html" class="custom-underline" id="home">Home</a>
+                </li>
+                <li><a href="#" id="about">About</a></li>
+                <li><a href="portfolio.html" id="portfolio">Portfolio</a></li>
+                <li><a href="contact.html" id="contact">Contact</a></li>
+                <i class="fa-solid fa-moon" id="toggle" onclick="switchMode()"></i>
+                <div id="google_translate_element" class="google"></div>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="about">
+                <div class="img2"></div>
+                <div class="about-content">
+                    <h2 class="about_me">About <span class="me">Me</span></h2>
+                    <p class="frontdev">Software Developer</p>
+                    <p id="about_summary" onclick="prevContent()">
+                        I’m Victor Asama, a passionate web / software developer dedicated
+                        to creating engaging and visually appealing web experiences.
+                        Specializing in HTML, CSS, and JavaScript, I enjoy translating
+                        design concepts into functional and user-friendly interfaces.
+                    </p>
+                    <button class="btn2" id="btn2" onclick="aboutContent()">
+                        Read More
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="view-project">
+                <div class="project-content">
+                    <p id="p17">A Developer's Journey</p>
+                    <p id="p8">Innovation in Every Line</p>
+                    <p id="p9">
+                        Discover the projects that have defined my career, each a
+                        testament to my commitment to excellence
+                    </p>
+                    <div class="show">
+                        <div class="show2">
+                            <div><i class="fa-solid fa-door-open icon2"></i></div>
+                            <p>
+                                Developed a scalable login and sign-up page for a high-traffic
+                                platform, handling thousands of daily users while ensuring a
+                                seamless and secure user experience.
+                            </p>
+                        </div>
+                        <div class="show2">
+                            <div><i class="fa-brands fa-webflow icon2"></i></div>
+                            <p>
+                                Designed a dynamic, one-page website for a dance contest with
+                                smooth navigation and an intuitive sign-up flow.
+                            </p>
+                        </div>
+                    </div>
+                    <button class="btn5">
+                        See My Projects <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+                <img src="assets/images/bg4.jpg" class="bg4" alt="" />
+            </div>
+        </section>
+        <section class="getintouch">
+            <div>
+                <div>
+                    <p id="p10">Get in Touch</p>
+                    <p id="p11">We are eager to collaborate and bring your ideas to life</p>
+                </div>
+                <div>
+                    <div id="checks">
+                        <span><i class="fa-solid fa-check"></i></span>
+                        <p class="p12">Custom software solutions tailored to your needs</p>
+                    </div>
+                    <div id="checks">
+                        <span><i class="fa-solid fa-check"></i></span>
+                        <p class="p12">Expert guidance from industry professionals</p>
+                    </div>
+                    <div class="callButtons">
+                        <button>
+                            <span><i class="fa-solid fa-envelope envelope2"></i> Contact Us</span>
+                        </button>
+                        <button>
+                            <span><i class="fa-solid fa-phone"></i>Schedule a call</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="call_img">
+                <img src="assets/images/bg2.jpg" alt="contact-img" class="call" />
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="links">
+            <ul>
+                <li><a href="index.html" class="custom-underline" id="home">Home</a></li>
+                <li><a href="#" id="about">About</a></li>
+
+                <li><a href="portfolio.html" id="portfolio">Portfolio</a></li>
+                <li><a href="contact.html" id="contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="brand">
+            <div>
+                <p class="copy">&copy theCode 2023, Showcasing Innovation and Expertise</p>
+            </div>
+            <div class="brands">
+                <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram "></i></a></i>
+                <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-x "></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100016614308613" target="_blank"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/asama-victor" target="_blank"><i
+                        class="fa-brands fa-linkedin "></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+    <script>
+        function aboutContent() {
+            document.getElementById("about_summary").innerHTML = "I’m Victor Asama, a passionate web / software developer dedicated to creating engaging and visually appealing web experiences. Specializing in HTML, CSS, and JavaScript, I enjoy translating design concepts into functional and user-friendly interfaces. Before transitioning into web development, I gained valuable experience as a graphic designer, where I crafted digital products for various brands. This background taught me the significance of aesthetics and usability in design, shaping my approach to developing websites. Throughout my career, I have worked on a variety of projects, including e-commerce websites, mobile applications, and web applications. Each project has enhanced my skills and encouraged me to tackle challenges with creativity. As a dedicated individual, I am always seeking opportunities to improve my skills and expand my knowledge. Currently, I am looking for new challenges to advance my career and share my enthusiasm for web development with others."
+            document.getElementById("btn2").style.display = 'none';
+        }
+
+        function prevContent() {
+            document.getElementById("about_summary").innerHTML = "I’m Victor Asama, a passionate web developer dedicated to creating engaging and visually appealing web experiences. Specializing in HTML, CSS, and JavaScript, I enjoy translating design concepts into functional and user-friendly interfaces."
+            document.getElementById("btn2").style.display = 'block';
+        }
+    </script>
+</body>
+
+</html>

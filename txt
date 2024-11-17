@@ -1,0 +1,328 @@
+
+    <div id="load">
+        <hr />
+        <hr />
+        <hr />
+        <hr />
+    </div>
+    <div id="main-page1">
+        <nav>
+            <div class="name">
+                <span class="name1">Victor</span>
+                <span class="name2">Asama</span>
+            </div>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+                <i class="fa-solid fa-x" id="cancel"></i>
+                <li><a href="#" class="custom-underline" id="home">Home</a></li>
+                <li><a href="about.html" target="_self" id="about">About</a></li>
+                <li><a href="portfolio.html" id="portfolio">Portfolio</a></li>
+                <li><a href="contact.html" id="contact">Contact</a></li>
+                <li>
+                    <select name="language" id="language" class="lang1" onchange="changeLanguage()">
+                        <option class= "opt">lang</option>
+                        <option value="eng" class="opt">English</option>
+                        <option value="french" class="opt">French</option>
+                        <option value="spanish" class="opt">Spanish</option>
+                    </select>
+                </li>
+                <i class="fa-solid fa-moon" id="toggle" onclick="switchMode()"></i>
+            </ul>
+        </nav>
+        <header>
+            <div class="home">
+                <div class="content">
+                    <p class="p1" id="p1">Hello, I'm</p>
+                    <p class="p2" id="p2">Victor Oruaruoghene Asama</p>
+                    <span class="p3" id="p3">And I'm </span><span class="type p3" id="typed-text"></span>
+                    <p class="p4" id="p4">Hi! I'm Victor Asama, a passionate front-end developer specializing in
+                        translating design concepts into seamless and interactive web experiences using HTML, CSS and
+                        JavaScript</p>
+                    <div class="brands">
+                        <a href="https://www.instagram.com" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a></i>
+                        <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-x"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100016614308613" target="_blank"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/asama-victor" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <button class="cvButton"><a href="assets/cv/Asama's CV.pdf" id="cv"
+                            download="Asama's CV.pdf">Download CV</a></button><span><a href="#skills" class="mouse"><i
+                                class="fa-solid fa-mouse"></i></a></i></span>
+                </div>
+                <div class="image"></div>
+            </div>
+        </header>
+        <main>
+            <section class="slides">
+                <div class="slider">
+                    <div class="slide">
+                        <div class="display">
+                            <div>
+                                <p class="head1">Johnathan Davis</p>
+                                <p class="head2">CEO, Tech Solutions</p>
+                            </div>
+                        </div>
+                        <p class="contents" id="contents">Victor is a highly skilled and dependable web developer. His attention to
+                            detail and innovative approach consistently deliver outstanding results. We couldn’t be
+                            happier with the work he has done for us.</p>
+                    </div>
+                    <div class="slide">
+                        <div class="display">
+                            <div>
+                                <p class="head1">Sophia Martinez</p>
+                                <p class="head2">Marketing Director, Creative Agency</p>
+                            </div>
+                        </div>
+                        <p class="contents">Victor’s expertise in web development has significantly impacted our online
+                            presence. His dedication to quality and professionalism makes him a trusted partner for any
+                            project.</p>
+                    </div>
+                    <div class="slide">
+                        <div class="display">
+                            <div>
+                                <p class="head1">Michael Robertson</p>
+                                <p class="head2">Founder, Startup Hub</p>
+                            </div>
+                        </div>
+                        <p class="contents">Victor is a remarkable web developer who combines technical proficiency with
+                            business insight. His ability to understand our needs and deliver exactly what we wanted was
+                            exceptional.</p>
+                    </div>
+                    <div class="slide">
+                        <div class="display">
+                            <div>
+                                <p class="head1">Emma Walker</p>
+                                <p class="head2">Product Manager, Innovative Tech</p>
+                            </div>
+                        </div>
+                        <p class="contents">Victor’s commitment to excellence is evident in every project he undertakes.
+                            His skills in web development and user-centric design make him an invaluable asset to any
+                            team.</p>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="slide">
+                        <div class="display">
+                            <div>
+                                <p class="head1">Johnathan Davis</p>
+                                <p class="head2">CEO, Tech Solutions</p>
+                            </div>
+                        </div>
+                        <p class="contents">Victor is a highly skilled and dependable web developer. His attention to
+                            detail and innovative approach consistently deliver outstanding results. We couldn’t be
+                            happier with the work he has done for us.</p>
+                    </div>
+                    <div class="slide">
+                        <div class="display">
+                            <div>
+                                <p class="head1">Sophia Martinez</p>
+                                <p class="head2">Marketing Director, Creative Agency</p>
+                            </div>
+                        </div>
+                        <p class="contents">Victor’s expertise in web development has significantly impacted our online
+                            presence. His dedication to quality and professionalism makes him a trusted partner for any
+                            project.</p>
+                    </div>
+                    <div class="slide">
+                        <div class="display">
+                            <div>
+                                <p class="head1">Michael Robertson</p>
+                                <p class="head2">Founder, Startup Hub</p>
+                            </div>
+                        </div>
+                        <p class="contents">Victor is a remarkable web developer who combines technical proficiency with
+                            business insight. His ability to understand our needs and deliver exactly what we wanted was
+                            exceptional.</p>
+                    </div>
+                    <div class="slide">
+                        <div class="display">
+                            <div>
+                                <p class="head1">Emma Walker</p>
+                                <p class="head2">Product Manager, Innovative Tech</p>
+                            </div>
+                        </div>
+                        <p class="contents">Victor’s commitment to excellence is evident in every project he undertakes.
+                            His skills in web development and user-centric design make him an invaluable asset to any
+                            team.</p>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="slide">
+                        <div class="display">
+                            <div>
+                                <p class="head1">Johnathan Davis</p>
+                                <p class="head2">CEO, Tech Solutions</p>
+                            </div>
+                        </div>
+                        <p class="contents">Victor is a highly skilled and dependable web developer. His attention to
+                            detail and innovative approach consistently deliver outstanding results. We couldn’t be
+                            happier with the work he has done for us.</p>
+                    </div>
+                    <div class="slide">
+                        <div class="display">
+                            <div>
+                                <p class="head1">Sophia Martinez</p>
+                                <p class="head2">Marketing Director, Creative Agency</p>
+                            </div>
+                        </div>
+                        <p class="contents">Victor’s expertise in web development has significantly impacted our online
+                            presence. His dedication to quality and professionalism makes him a trusted partner for any
+                            project.</p>
+                    </div>
+                    <div class="slide">
+                        <div class="display">
+                            <div>
+                                <p class="head1">Michael Robertson</p>
+                                <p class="head2">Founder, Startup Hub</p>
+                            </div>
+                        </div>
+                        <p class="contents">Victor is a remarkable web developer who combines technical proficiency with
+                            business insight. His ability to understand our needs and deliver exactly what we wanted was
+                            exceptional.</p>
+                    </div>
+                    <div class="slide">
+                        <div class="display">
+                            <div>
+                                <p class="head1">Emma Walker</p>
+                                <p class="head2">Product Manager, Innovative Tech</p>
+                            </div>
+                        </div>
+                        <p class="contents">Victor’s commitment to excellence is evident in every project he undertakes.
+                            His skills in web development and user-centric design make him an invaluable asset to any
+                            team.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="core">
+                <div>
+                    <p class="p5" id="skills">Core Skills</p>
+                    <p class="p6">With months of experience in software and web development, here are my core
+                        competencies:</p>
+                    <div class="skillsdiv">
+                        <div class="div1">
+                            <i class="fa-solid fa-code icon"></i>
+                            <p class="p7">Front-End development</p>
+                            <p class="p8">Proficient in HTML, CSS, React and Vanilla JS to deliver complete web
+                                solutions by creating responsive designs and interactive applications.</p>
+                            <div class="progress">
+                                <span class="span1">95%</span><span class="span2"><progress
+                                        value="0.95"></progress></span>
+                            </div>
+                        </div>
+                        <div class="div2">
+                            <i class="fa-solid fa-gears icon"></i>
+                            <p class="p7"> IoT (Internet of Things) Developer</p>
+                            <p class="p8">Skilled in designing, implementing, and integrating IoT projects that
+                                prioritize efficiency, reliability, and seamless data flow.</p>
+                            <div class="progress">
+                                <span class="span1">75%</span><span class="span2"><progress
+                                        value="0.75"></progress></span>
+                            </div>
+                        </div>
+                        <div class="div3">
+                            <i class="fa-solid fa-list icon"></i>
+                            <p class="p7">Agile Methodologies</p>
+                            <p class="p8">Skilled in agile practices to ensure efficient project management and timely
+                                delivery.</p>
+                            <div class="progress">
+                                <span class="span1">87%</span><span class="span2"><progress
+                                        value="0.87"></progress></span>
+                            </div>
+                        </div>
+                        <div class="div4">
+                            <i class="fa-regular fa-object-group icon"></i>
+                            <p class="p7">UI/UX Designer</p>
+                            <p class="p8">Creating user-centered interfaces that blend aesthetics with functionality for
+                                seamless user experiences.
+                            </p>
+                            <div class="progress">
+                                <span class="span1">80%</span><span class="span2">
+                                    <progress value="0.80"></progress></span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="div5">
+                            <i class="fa-solid fa-microchip icon"></i>
+                            <p class="p7">Embedded Systems Engineer</p>
+                            <p class="p8">Specializing in microcontroller programming, hardware integration, and
+                                optimizing system performance for reliable, real-time applications</p>
+                            <div class="progress">
+                                <span class="span1">70%</span><span class="span2"><progress
+                                        value="0.70"></progress></span>
+                            </div>
+                        </div>
+                        <div class="div6">
+                            <i class="fa-solid fa-terminal icon"></i>
+                            <p class="p7">Software Developer</p>
+                            <p class="p8">Focusing on building efficient, scalable applications through clean code and
+                                innovative problem-solving.</p>
+                            <div class="progress">
+                                <span class="span1">80%</span><span class="span2"><progress
+                                        value="0.80"></progress></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="quote">
+                    <img src="assets/images/bg1.jpg" class="quoteimg" alt="">
+                    <div>
+                        <p id="p5">Collaborating with this developer was a truly transformative experience. Their
+                            ability to innovate and consistently meet deadlines is unmatched.</p>
+                        <p id="p6">Chris Evans</p>
+                        <p id="p7">CTO at HyTech</p>
+                        <div id="bt2"><button class="btn4"><a href="contact.html">Inquire for Details</a></button></div>
+                    </div>
+                </div>
+            </section>
+            <section class="port1">
+                <div class="port2">
+                    <p class="port3">Let's Build Something Great</p>
+                    <p class="port4">Join me on a journey of innovation and excellence. Let's collaborate to <br> create
+                        impactful software solutions.</p>
+                    <div class="port5">
+                        <button class="port6"><a href="contact.html" class="portlink">Contact Me</a></button>
+                        <a href="portfolio.html" class='portlink'></a>
+                            <div class="port7">
+                                <p>View Portfolio</p>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="links">
+                <ul>
+                    <li><a href="#" class="custom-underline" id="home">Home</a></li>
+                    <li><a href="about.html" id="about">About</a></li>
+
+                    <li><a href="portfolio.html" id="portfolio">Portfolio</a></li>
+                    <li><a href="contact.html" id="contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="brand">
+                <div>
+                    <p class="copy">&copy theCode 2023, Showcasing Innovation and Expertise</p>
+                </div>
+                <div class="brands">
+                    <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></i>
+                    <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-x "></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100016614308613" target="_blank"><i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/asama-victor" target="_blank"><i
+                            class="fa-brands fa-linkedin "></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="assets/js/main.js"></script>

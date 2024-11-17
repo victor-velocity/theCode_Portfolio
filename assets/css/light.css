@@ -1,0 +1,19 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: white;
+    color: black;
+    scroll-behavior: smooth;
+}
+
+.fa-sun {
+    font-size: 23px;
+    color: yellow;
+    padding-right: 7px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        background-color: white;
+    }
+}
