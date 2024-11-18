@@ -741,7 +741,7 @@ meter {
 }
 
 .portlink {
-    color: black;
+    color: white !important;
     text-decoration: none;
     display: flex;
     justify-content: center;
