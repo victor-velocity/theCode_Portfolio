@@ -18,7 +18,8 @@
             }, 'google_translate_element');
         }
     </script>
-    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript"
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
 
 <body>
@@ -90,11 +91,45 @@
                             </p>
                         </div>
                     </div>
-                    <button class="btn5">
+                    <a href="portfolio.html"><button class="btn5">
                         See My Projects <i class="fa-solid fa-arrow-right"></i>
-                    </button>
+                    </button></a>
                 </div>
                 <img src="assets/images/bg4.jpg" class="bg4" alt="" />
+            </div>
+        </section>
+        <section class="myskills">
+            <div class="skillscontent">
+                <p class="skillscontent1">My Skills</p>
+                <h1 class="skillscontent2">You Can Imagine<br>I Can Do</h1>
+            </div>
+            <div class="skillsMeasurement">
+                <div>
+                    <div class="labels">
+                        <label>Front-End Development</label><label>95%</label>
+                    </div>
+                    <progress class="progress2" data-fill="100" value="0.95"></progress>
+                    <div class="labels">
+                        <label>Internet Of Things Developer</label><label>75%</label>
+                    </div>
+                    <progress class="progress2" data-fill="100" value="0.75"></progress>
+                    <div class="labels">
+                        <label>Agile Methodologies</label><label>87%</label>
+                    </div>
+                    <progress class="progress2" data-fill="100" value="0.87"></progress>
+                    <div class="labels">
+                        <label>UI/UX Developer</label><label>80%</label>
+                    </div>
+                    <progress class="progress2" data-fill="100" value="0.80"></progress>
+                    <div class="labels">
+                        <label>Embedded Systems Engineer</label><label>70%</label>
+                    </div>
+                    <progress class="progress2" data-fill="100" value="0.70"></progress>
+                    <div class="labels">
+                        <label>Software Developer</label><label>80%</label>
+                    </div>
+                    <progress class="progress2" data-fill="100" value="0.80"></progress>
+                </div>
             </div>
         </section>
         <section class="getintouch">
@@ -113,11 +148,11 @@
                         <p class="p12">Expert guidance from industry professionals</p>
                     </div>
                     <div class="callButtons">
-                        <button>
-                            <span><i class="fa-solid fa-envelope envelope2"></i> Contact Us</span>
-                        </button>
-                        <button>
-                            <span><i class="fa-solid fa-phone"></i>Schedule a call</span>
+                        <a href="contact.html"><button>
+                                <span><i class="fa-solid fa-envelope envelope2"></i> Contact Me</span>
+                            </button></a>
+                        <button onclick="">
+                            <span><i class="fa-solid fa-phone"></i><span id="phonenumber">Schedule a call</span></span>
                         </button>
                     </div>
                 </div>
@@ -142,8 +177,9 @@
                 <p class="copy">&copy theCode 2023, Showcasing Innovation and Expertise</p>
             </div>
             <div class="brands">
-                <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram "></i></a></i>
-                <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-x "></i></a>
+                <a href="https://www.instagram.com/vic_techzy101/" target="_blank"><i
+                        class="fa-brands fa-instagram "></i></a></i>
+                <a href="https://www.x.com/AsamaVictor" target="_blank"><i class="fa-brands fa-x "></i></a>
                 <a href="https://www.facebook.com/profile.php?id=100016614308613" target="_blank"><i
                         class="fa-brands fa-facebook"></i></a>
                 <a href="https://www.linkedin.com/in/asama-victor" target="_blank"><i
@@ -162,7 +198,42 @@
             document.getElementById("about_summary").innerHTML = "I’m Victor Asama, a passionate web developer dedicated to creating engaging and visually appealing web experiences. Specializing in HTML, CSS, and JavaScript, I enjoy translating design concepts into functional and user-friendly interfaces."
             document.getElementById("btn2").style.display = 'block';
         }
+
+        // Function to animate the progress bar
+        const animateProgressBar = (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const bar = entry.target;
+                    const fillPercent = bar.getAttribute('data-fill');
+                    bar.style.width = fillPercent + '%';
+                    observer.unobserve(bar); // Stop observing once animation starts
+                }
+            });
+        };
+
+        // Create an Intersection Observer
+        const observer = new IntersectionObserver(animateProgressBar, {
+            threshold: 0.5 // Trigger when 50% of the element is visible
+        });
+
+        // Select all progress bars
+        const progressBars = document.querySelectorAll('.progress2');
+        progressBars.forEach(bar => observer.observe(bar));
+
+        document.getElementById("phonenumber").onclick = function () {
+            const phoneNumber = "+2347045580195"; // Replace with your phone number
+
+            // Check if the user is on a phone
+            const isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+            if (isMobile) {
+                // Redirect to the phone app with the number
+                window.location.href = `tel:${phoneNumber}`;
+            } else {
+                // Replace button text with the phone number
+                this.textContent = phoneNumber;
+            }
+        }
     </script>
 </body>
-
 </html>

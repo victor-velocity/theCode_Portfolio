@@ -48,3 +48,4 @@ cancelIcon.addEventListener('click', function () {
     checkbox.checked = false;
     body.classList.remove('no-scroll');
 });
+

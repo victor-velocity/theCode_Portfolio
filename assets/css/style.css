@@ -1,8 +1,18 @@
-body, * {
+body,
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-family: 'Lato'
+}
+
+a {
+    text-decoration: none;
+}
+
+.VIpgJd-ZVi9od-aZ2wEe, .VIpgJd-ZVi9od-aZ2wEe-OiiCO, tbody {
+    display: none;
 }
 
 #google_translate_element img {
@@ -116,7 +126,8 @@ body, * {
 }
 
 /* NAV BAR SECTION  */
-#check, #cancel {
+#check,
+#cancel {
     display: none !important;
 }
 
@@ -225,18 +236,19 @@ nav ul li:hover {
     position: relative;
     left: -100%;
     animation: slideIn .4s ease-out forwards;
-  }
+}
 
 @keyframes slideIn {
     0% {
-      left: -100%;
-      opacity: 0;
+        left: -100%;
+        opacity: 0;
     }
+
     100% {
-      left: 0;
-      opacity: 1;
+        left: 0;
+        opacity: 1;
     }
-  }
+}
 
 .image {
     min-width: 400px;
@@ -691,16 +703,17 @@ meter {
     font-size: 20px;
     border-radius: 8px;
     transition: 0.5s ease;
+    cursor: pointer;
 }
 
 .port6:hover {
-    color: blue;
+    color: blue !important;
     scale: 1.1;
     background-color: white;
     border: 1px solid blue;
 }
 
-.port7 {
+.port30 {
     font-size: 20px;
     color: #1f242d;
     transition: 1s ease;
@@ -711,8 +724,12 @@ meter {
     cursor: pointer;
 }
 
-.port7:hover {
+.port30 a:hover {
     color: white;
+}
+
+.port30:hover {
+    color: white !important;
     background-color: blue;
     padding: 15px 30px;
     border-radius: 10px;
@@ -751,7 +768,8 @@ footer {
     list-style-type: none;
 }
 
-.links ul li a, .lang2 {
+.links ul li a,
+.lang2 {
     color: white;
     text-decoration: none;
     font-size: 18px;
@@ -760,7 +778,8 @@ footer {
     transition: 0.3s ease;
 }
 
-.links ul li a:hover, .lang2:hover {
+.links ul li a:hover,
+.lang2:hover {
     color: blue;
     transform: translateY(-10px);
 }
@@ -932,6 +951,57 @@ footer {
     scale: 1.1;
 }
 
+/* MY SKILLS SECTION  */
+.myskills {
+    background-color: blue;
+    width: 100%;
+    height: auto;
+    padding: 100px 5%;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.skillscontent {
+    width: 60%;
+}
+
+.skillsMeasurement {
+    width: 100%;
+}
+
+.skillscontent1 {
+    font-size: 40px;
+    font-family: 'Permanent Marker';
+    margin-bottom: 20px;
+}
+
+.skillscontent2 {
+    font-size: 40px;
+    line-height: 60px;
+    margin-bottom: 30px;
+}
+
+.labels {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 8px;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+.progress2 {
+    width: 0;
+    margin-bottom: 30px;
+    height: 20px;
+    transition: width 2s ease-in-out;
+}
+
 /* HOW TO CONTACT SECTION  */
 .getintouch {
     padding: 20px 5% 80px 5%;
@@ -997,8 +1067,9 @@ footer {
     font-weight: 600;
 }
 
-.fa-phone, .envelope2 {
-    color: white  !important;
+.fa-phone,
+.envelope2 {
+    color: white !important;
     margin-right: 6px;
 }
 
@@ -1117,8 +1188,9 @@ footer {
     color: white;
 }
 
-#connect4 {
+#connect8 {
     text-decoration: none;
+    cursor: pointer;
 }
 
 .connect4:hover {
@@ -1336,6 +1408,7 @@ textarea {
     text-align: center;
     padding: 20px;
     font-size: 35px;
+    color: white;
 }
 
 .chart {
@@ -1385,6 +1458,54 @@ textarea {
     color: white;
     text-decoration: none;
 }
+
+.servicehead {
+    text-align: center;
+    color: blue;
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-family: 'Permanent Marker';
+    margin-bottom: 100px;
+}
+
+.serviceDiv {
+    margin-bottom: 170px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.servicetitle {
+    font-size: 24px;
+    color: rgb(0, 4, 255);
+    margin: 20px 0px;
+}
+
+.servicecontent {
+    width: 300px;
+    height: auto;
+    padding: 50px 10px;
+    border: 4px solid blue;
+    border-radius: 20px;
+    transition: .3s ease;
+    box-shadow: 0px 0px 15px blue;
+}
+
+.servicecontent:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.icon3 {
+    color: blue;
+    font-size: 40px;
+    margin-left: 5px;
+}
+
 
 /* TRANSFORMING IDEAS SECTION */
 
