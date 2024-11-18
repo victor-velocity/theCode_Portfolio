@@ -17,3 +17,11 @@ body {
         background-color: white;
     }
 }
+
+.port30 a {
+    color: black !important;
+}
+
+.port30 a:hover {
+    color: white;
+}
