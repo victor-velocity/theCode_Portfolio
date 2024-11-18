@@ -713,6 +713,10 @@ meter {
     border: 1px solid blue;
 }
 
+.port30 a {
+    color: white !important;
+}
+
 .port30 {
     font-size: 20px;
     color: #1f242d;
