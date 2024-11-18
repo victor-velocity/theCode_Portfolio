@@ -724,7 +724,7 @@ meter {
     cursor: pointer;
 }
 
-.port30 a:hover {
+.portlink:hover {
     color: white;
 }
 
@@ -737,7 +737,7 @@ meter {
 }
 
 .portlink {
-    color: white;
+    color: black;
     text-decoration: none;
     display: flex;
     justify-content: center;
@@ -854,10 +854,9 @@ footer {
 #btn2 {
     padding: 12px 28px;
     font-size: 18px;
-    color: white;
+    color: white !important;
     background: blue;
     box-shadow: 0px 0px 20px blue;
-    color: #1f242d;
     letter-spacing: 1px;
     border: none;
     border-radius: 40px;
