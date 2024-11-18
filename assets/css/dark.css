@@ -30,8 +30,8 @@ nav ul li a, #language {
     background-color: transparent;
 }
 
-.portlink {
-    color: white;
+.portlink, .port30{
+    color: white !important;
 }
 
 .mail p a  {
